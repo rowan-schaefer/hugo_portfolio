@@ -36,20 +36,23 @@ sections:
         gradient_end: '#1976d2'
         gradient_start: '#004ba0'
         text_color_light: true
+
   - block: about.biography
     id: about
     content:
-      title: Biography
+      title: Biography!
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
+
   - block: skills
     content:
-      title: Skills
+      title: These are my skills.
       text: ''
       # Choose a user to display skills from (a folder name within `content/authors/`)
       username: admin
     design:
-      columns: '1'
+      columns: '2'
+
   - block: experience
     content:
       title: Experience
@@ -63,7 +66,7 @@ sections:
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
         - title: CEO
-          company: GenCoin
+          company: Google
           company_url: ''
           company_logo: org-gc
           location: California
@@ -72,10 +75,10 @@ sections:
           description: |2-
               Responsibilities include:
 
-              * Analysing
+              * Data
               * Modelling
               * Deploying
-        - title: Professor of Semiconductor Physics
+        - title: Professor of Aerospace Engineering
           company: University X
           company_url: ''
           company_logo: org-x
@@ -85,6 +88,7 @@ sections:
           description: Taught electronic engineering and researched semiconductor physics.
     design:
       columns: '2'
+
   - block: accomplishments
     content:
       # Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
@@ -98,6 +102,15 @@ sections:
       #   Leave other parameters empty if not required.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
+        - certificate_url: https://www.business-science.io
+          date_end: '2020-12-21'
+          date_start: '2020-07-01'
+          description: ''
+          icon: datacamp
+          organization: Business Science Academy
+          organization_url: https://www.business-science.io
+          title: 'Business Science Academy'
+          url: ''
         - certificate_url: https://www.coursera.org
           date_end: ''
           date_start: '2021-01-25'
@@ -116,17 +129,9 @@ sections:
           organization_url: https://www.edx.org
           title: Blockchain Fundamentals
           url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-        - certificate_url: https://www.datacamp.com
-          date_end: '2020-12-21'
-          date_start: '2020-07-01'
-          description: ''
-          icon: datacamp
-          organization: DataCamp
-          organization_url: https://www.datacamp.com
-          title: 'Object-Oriented Programming in R'
-          url: ''
     design:
       columns: '2'
+
   - block: collection
     id: posts
     content:
@@ -154,6 +159,7 @@ sections:
       # Choose a layout view
       view: compact
       columns: '2'
+
   - block: portfolio
     id: projects
     content:
@@ -171,8 +177,8 @@ sections:
       buttons:
         - name: All
           tag: '*'
-        - name: Deep Learning
-          tag: Deep Learning
+        - name: NLP
+          tag: NLP
         - name: Other
           tag: Demo
     design:
@@ -181,14 +187,26 @@ sections:
       view: showcase
       # For Showcase view, flip alternate rows?
       flip_alt_rows: false
-  - block: markdown
+
+  - block: skills
     content:
-      title: Gallery
-      subtitle: ''
-      text: |-
-        {{< gallery album="demo" >}}
+      title: Skills
+      text: ''
+      # Choose a user to display skills from (a folder name within `content/authors/`)
+      username: admin
     design:
       columns: '1'
+
+
+  # - block: markdown
+  #   content:
+  #     title: Gallery
+  #     subtitle: ''
+  #     text: |-
+  #       {{< gallery album="demo" >}}
+  #   design:
+  #     columns: '1'
+
   - block: collection
     id: featured
     content:
@@ -200,6 +218,7 @@ sections:
     design:
       columns: '2'
       view: card
+
   - block: collection
     content:
       title: Recent Publications
@@ -214,6 +233,7 @@ sections:
     design:
       columns: '2'
       view: citation
+
   - block: collection
     id: talks
     content:
@@ -224,11 +244,13 @@ sections:
     design:
       columns: '2'
       view: compact
+
   - block: tag_cloud
     content:
       title: Popular Topics
     design:
       columns: '2'
+
   - block: contact
     id: contact
     content:
@@ -281,3 +303,4 @@ sections:
     design:
       columns: '2'
 ---
+
